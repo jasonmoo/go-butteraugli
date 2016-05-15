@@ -1,0 +1,19 @@
+
+go-butteraugli
+
+This is a direct port of the butteraugli (https://github.com/google/butteraugli) library for measuring the psychovisual similarity between two images.
+
+This port was mostly a line-by-line translation from c++ to go.  The key difference is that float64 was used for both double and float.  This allowed for simpler code and did not affect the resulting diff value.
+
+Example diff value:
+butteraugli:    1.071696
+go-butteraugli: 1.0716956373428894
+
+This library is currently in parity with commit https://github.com/google/butteraugli/commit/88897aba.
+
+Tools:
+A command-line tool for measuring the butteraugli diff value between two images is included in `cmd/compare_images`.  It serves as an example for how to use this library.
+
+Contributing:
+
+Pull requests are welcome that fix bugs or port updates to the butteraugli library to this code.  Changes that make the code more idiomatic to the go language are not welcome.

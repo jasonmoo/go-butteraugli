@@ -1,0 +1,5 @@
+cmd/cmd
+*.prof
+*.svg
+tmp/
+cmd/profile
