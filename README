@@ -9,7 +9,7 @@ Example diff value:
 butteraugli:    1.071696
 go-butteraugli: 1.0716956373428894
 
-This library is currently in parity with commit https://github.com/google/butteraugli/commit/88897aba.
+This library is currently in parity with commit https://github.com/google/butteraugli/commit/88897aba.  Since 88897aba the authors have chosen to roll back roughly 1000 changelines (https://github.com/google/butteraugli/compare/26d3d9b8110499fa767673c1f713eacdf306aba5...master).  I'm going to wait until the library stabilizes to update this port.  Until then this port is out of parity and is producing very different numbers.
 
 Tools:
 A command-line tool for measuring the butteraugli diff value between two images is included in `cmd/compare_images`.  It serves as an example for how to use this library.
